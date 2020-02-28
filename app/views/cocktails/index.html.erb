@@ -14,7 +14,7 @@
             <p><%= cocktail.name %></p>
           </h5>
         <p class="card-text"></p>
-        <a href="/cocktails/:id" class="btn btn-dark text-light">more details</a>
+        <%= link_to "more details", cocktail_path(cocktail), class: "btn btn-dark text-light"  %>
         </div>
     </div>
  <% end %>
